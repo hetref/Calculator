@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+
+	<h3>Can calculate the numbers here -</h3>
+	<button id="add" onclick="addtwonum()">Add two numbers</button>
+	<button id="sub" onclick="subtwonum()">Substract two numbers</button>
+	<button id="div" onclick="divtwonum()">Divide two numbers</button>
+	<button id="rem" onclick="getremainder()">Get Remainder</button>
+	<p id="resultadd"></p>
+	<p id="resultsub"></p>
+	<p id="resultdiv"></p>
+	<p id="resultrem"></p>
+
+	<script type="text/javascript">
+
+		function addtwonum() {
+			var first = parseInt(prompt("Enter first number"));
+			var second = parseInt(prompt("Enter second number"));
+			var res = first + second;
+			alert("The Addition of the number is " + res);
+			document.getElementById("resultadd").innerHTML = "The Addition of the number is " + res;
+		}
+
+		function subtwonum() {
+			var first = parseInt(prompt("Enter first number"));
+			var second = parseInt(prompt("Enter second number"));
+			var res = first - second;
+			alert("The Substraction of the number is " + res);
+			document.getElementById("resultsub").innerHTML = "The Substraction of the number is " + res;
+		}
+
+		function divtwonum() {
+			var first = parseInt(prompt("Enter first number"));
+			var second = parseInt(prompt("Enter second number"));
+			var res = first / second;
+			alert("The Division of the number is " + res);
+			document.getElementById("resultdiv").innerHTML = "The Division of the number is " + res;
+		}
+
+		function getremainder() {
+			var first = parseInt(prompt("Enter first number"));
+			var second = parseInt(prompt("Enter second number"));
+			var res = first % second;
+			alert("The Remainder is " + res);
+			document.getElementById("resultrem").innerHTML = "The Remainder is " + res;
+		}
+
+	</script>
+
+</body>
+</html>
